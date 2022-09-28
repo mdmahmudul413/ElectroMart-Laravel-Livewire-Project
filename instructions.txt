@@ -1,0 +1,32 @@
+tut-1
+##create project:  composer create-project --prefer-dist laravel/laravel laravelecom
+##install livewire: composer require livewire/livewire
+##make database
+##make layout like resources/views/base.blade.php and copy paste index.html template
+##wrap the directories into curly braces
+add @livewireStyles and @livewireScripts after style and script sheets
+
+##now make livewire component name HomeComponent
+command: php artisan make:livewire HomeComponent
+##component will apear in the app/http/livewire/HomeComponent
+##modify the function inside HomeComponent.php file
+public function render()
+    {
+        return view('livewire.home-component')->layout('layouts.base');
+    }
+
+##make route
+##copy index.html main section and paste it to Home-Component.blade.php file which is in the views/livewire folder
+
+##then wrap the img tags into curly braces
+
+##copy assets folder and paste it to public folder
+
+
+tut-2
+make ShopComponent and CartComponent livewire component
+
+
+
+
+
